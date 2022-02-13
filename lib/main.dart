@@ -20,8 +20,8 @@ class PhantomController extends StatelessWidget {
       title: 'Phantom Controller',
       theme: theme.copyWith(
         colorScheme: theme.colorScheme.copyWith(primary: Colors.blue),
-        appBarTheme:
-            AppBarTheme.of(context).copyWith(color: themeColorGradientEnd),
+        appBarTheme: AppBarTheme.of(context)
+            .copyWith(color: themeColorGradientEnd, elevation: 0),
         scaffoldBackgroundColor: themeColorGradientStart,
         canvasColor: themeColorGradientStart,
       ),
