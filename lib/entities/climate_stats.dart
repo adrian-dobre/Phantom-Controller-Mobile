@@ -14,9 +14,9 @@ class ClimateStats {
 
   factory ClimateStats.fromJson(Map<String, dynamic> json) {
     return ClimateStats(
-        temperature: json['temperature'],
-        humidity: json['humidity'],
-        pressure: json['pressure'],
+        temperature: json['temperature'].toDouble(),
+        humidity: json['humidity'].toDouble(),
+        pressure: json['pressure'].toDouble(),
         co2: json['co2'],
         light: json['light']);
   }
